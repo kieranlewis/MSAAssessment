@@ -9,6 +9,6 @@ namespace MSAAssessment.Models
     {
         public int StudentWorkID { get; set; }
         public int StudentID { get; set; }
-        public string linkName { get; set; }
+        public string LinkName { get; set; }
     }
 }
