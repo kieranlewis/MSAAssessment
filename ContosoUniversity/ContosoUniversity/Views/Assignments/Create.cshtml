@@ -3,7 +3,16 @@
 @{
     ViewBag.Title = "Create";
 }
-
+<head>
+    <link href="@Url.Content("~/Content/themes/base/minified/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.11.4.min.js")"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#datepicker" ).datepicker();
+        });
+    </script>
+</head>
 <h2>Create</h2>
 
 
@@ -33,7 +42,7 @@
         <div class="form-group input-group-sm">
             @Html.LabelFor(model => model.DueDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.DueDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.DueDate, new { htmlAttributes = new { @class = "form-control datepicker" } })
                 @Html.ValidationMessageFor(model => model.DueDate, "", new { @class = "text-danger" })
             </div>
         </div>
