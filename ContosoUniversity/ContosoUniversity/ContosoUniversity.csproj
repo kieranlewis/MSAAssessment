@@ -228,6 +228,7 @@
     <None Include="Properties\PublishProfiles\kieranlewisassessment - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\kieranlewisassessment - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\facebooklogin.js" />
     <Content Include="Scripts\fakeLoader.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

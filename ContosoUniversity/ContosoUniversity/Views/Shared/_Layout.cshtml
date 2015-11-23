@@ -10,6 +10,7 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/jqueryui")
     <script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="~/Scripts/facebooklogin.js"></script>
 
 </head>
 <body>
@@ -38,8 +39,8 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer></footer>
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+        <div id="status"></div>
     </div>
 
     
