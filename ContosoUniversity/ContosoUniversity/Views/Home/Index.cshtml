@@ -1,11 +1,44 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Index";
 }
 
+<script type="text/javascript">
 
-<div class="jumbotron">
-    <h1>Contoso University</h1>
-</div>
+    $(function () {
+        $("#accordion").accordion();
+    });
+</script>
+
+    <div class="jumbotron">
+        <h1>Contoso University</h1>
+    </div>
+
+    <div id="accordion">
+        <h3>Courses</h3>
+        <div>
+            <p>
+                The courses available to Contoso University students are the most prestiegious in the world.
+                With top facilities and lots of funding education can be found in theses classes with devices
+                not seen in other universities
+            </p>
+        </div>
+        <h3>Students</h3>
+        <div>
+            <p>
+                The stuents that graduate from Contoso University are sought after by many employees and have
+                some of the highest qualifications money can buy
+            </p>
+        </div>
+        <h3>Assignments</h3>
+        <div>
+            <p>
+                Students should expect a large workload in the form of assignments to help them understand the
+                content learnt in the classes. These can be month long projects to a weekly cover of previous
+                material.
+            </p>
+        </div>
+
+    </div>
 
 
 
